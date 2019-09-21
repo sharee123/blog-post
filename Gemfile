@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'acts_as_votable'
 gem 'rails_12factor', group: :production
+gem 'bootstrap', '~> 4.0.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
