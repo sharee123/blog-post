@@ -1,0 +1,22 @@
+<h4 class="create-post">Create your post</h4>
+<%= form_for(@post) do |f| %>
+<%#= render 'shared/error_messages'%>
+<%#= f.collection_select(:category_id, Category.all, :id,:name,{ prompt: "choose a category"}) %>
+<div class="container">
+  <div class="row">
+    <section class="col-xs-8">
+      <!-- class="sr-only" will hide from the screen -->
+      <div class="form-group"> <!-- helps space out sections of the form -->
+          <%= f.label :title %>
+          <%= f.text_field :title, placeholder: "Type post title here",:class => 'form-control' %>
+        </div>
+        <div class="form-group"> <!-- helps space out sections of the form -->
+          <%= f.label :content %>
+          <%= f.text_area :content, placeholder: "Type post title here",:class => 'form-control' %>
+        </div>
+      <%= f.submit ' Submit Post',:class => 'btn btn-primary'%>
+    </section>
+  </div>
+</div>		
+<% end %>
+</div>
