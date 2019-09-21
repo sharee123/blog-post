@@ -62,4 +62,4 @@ production:
   database: blog-post_production
   pool: 5
   username: postgres
-  password:
+  password: 123456
